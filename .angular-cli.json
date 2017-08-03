@@ -1,0 +1,93 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "ang1"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "vendors/bootstrap/dist/css/bootstrap.min.css",
+        "build/css/custom.min.css",
+        "vendors/bootstrap-daterangepicker/daterangepicker.css",
+        "vendors/jqvmap/dist/jqvmap.min.css",
+        "vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css",
+        "vendors/iCheck/skins/flat/green.css",
+        "vendors/nprogress/nprogress.css",
+        "vendors/font-awesome/css/font-awesome.min.css"
+      ],
+      "scripts": [
+        "./vendors/jquery/dist/jquery.min.js",
+        "./vendors/bootstrap/dist/js/bootstrap.min.js",
+        "./vendors/fastclick/lib/fastclick.js",
+        "./vendors/nprogress/nprogress.js",
+        "./vendors/Chart.js/dist/Chart.min.js",
+        "./vendors/gauge.js/dist/gauge.min.js",
+        "./vendors/bootstrap-progressbar/bootstrap-progressbar.min.js",
+        "./vendors/iCheck/icheck.min.js",
+        "./vendors/skycons/skycons.js",
+        "./vendors/Flot/jquery.flot.js",
+        "./vendors/Flot/jquery.flot.pie.js",
+        "./vendors/Flot/jquery.flot.time.js",
+        "./vendors/Flot/jquery.flot.stack.js",
+        "./vendors/Flot/jquery.flot.resize.js",
+        "./vendors/flot.orderbars/js/jquery.flot.orderBars.js",
+        "./vendors/flot-spline/js/jquery.flot.spline.min.js",
+        "./vendors/flot.curvedlines/curvedLines.js",
+        "./vendors/DateJS/build/date.js",
+        "./vendors/jqvmap/dist/jquery.vmap.js",
+        "./vendors/jqvmap/dist/maps/jquery.vmap.world.js",
+        "./vendors/jqvmap/examples/js/jquery.vmap.sampledata.js",
+        "./vendors/moment/min/moment.min.js",
+        "./vendors/bootstrap-daterangepicker/daterangepicker.js",
+        "./build/js/custom.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
